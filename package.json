@@ -1,0 +1,28 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Adam",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/vision": "^1.11.0",
+    "discord.js": "^12.1.1",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdamMBinder/Discovery-Discord-Bot.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/AdamMBinder/Discovery-Discord-Bot/issues"
+  },
+  "homepage": "https://github.com/AdamMBinder/Discovery-Discord-Bot#readme",
+  "description": ""
+}
