@@ -35,7 +35,7 @@ bot.on('message', async message=>{
 			.setTitle('Discovery Bot')
 			.addField('Developed By:', 'Adam Binder')
 			.addField('Created For:', 'Hack Brooklyn 2020')
-			.addField('Version', 1.1.0)
+			.addField('Version', '1.1.0')
 			.setColor(0xF1C40F)
 			.setThumbnail(message.author.displayAvatarURL())
 			.setFooter('Thanks for using Discovery Bot!')
