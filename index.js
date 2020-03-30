@@ -31,7 +31,7 @@ bot.on('message', async message=>{
 		break;
 
 		case 'surprise':
-			message.channel.send('test')
+			message.channel.send('pong!')
 		break;
 
 		case 'embed':
