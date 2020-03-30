@@ -48,7 +48,7 @@ bot.on('message', async message=>{
 		break;
 
 		case 'surprise':
-			message.author.send('https://www.youtube.com/watch?v=71gHLPmEeCk');
+			message.author.send('test');
 		break;
 
 		default:
