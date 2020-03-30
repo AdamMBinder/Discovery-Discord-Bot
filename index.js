@@ -30,25 +30,25 @@ bot.on('message', async message=>{
 			message.channel.send('pong!')
 		break;
 
-		case 'surprise':
-			message.channel.send('test')
-		break;
-
-		case 'embed':
+		case 'about':
 			const embed = new Discord.MessageEmbed()
-			.setTitle('User Information')
-			.addField('Player Name', message.author.username)
-			.addField('Version', version)
-			.addField('Current Server', message.guild.name)
+			.setTitle('Discovery Bot')
+			.addField('Developed By:', 'Adam Binder')
+			.addField('Created For:', 'Hack Brooklyn 2020')
+			.addField('Version', 1.1.0)
 			.setColor(0xF1C40F)
 			.setThumbnail(message.author.displayAvatarURL())
-			.setFooter('Test Footer')
-			message.channel.send(embed);
+			.setFooter('Thanks for using Discovery Bot!')
+			message.channel.send(message,author, embed);
 		break;
 
 		case 'send':
 			const attachment = new Discord.MessageAttachment('https://i.imgur.com/ZOKp8LH.jpg')
 			message.channel.send(message.author, attachment);
+		break;
+
+		case 'surprise':
+			message.author.send('https://www.youtube.com/watch?v=71gHLPmEeCk')
 		break;
 
 		default:
