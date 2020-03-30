@@ -25,7 +25,7 @@ bot.on('ready', () => {
 
 bot.on('guildMemberAdd', member => {
 
-	const channel = member.guild.channels.cache.find(channel => channel.name === "general");
+	const channel = member.guild.channels.cache.find(channel => channel.name === "demo");
 	if (!channel) return;
 
 	channel.send('Welcome to the demo server, ${member}! Upload an image to test me out. Type !help for more information. Enjoy!')
