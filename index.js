@@ -37,7 +37,7 @@ bot.on('message', async message=>{
 			.addField('Created For:', 'Hack Brooklyn 2020')
 			.addField('Version', '1.1.0')
 			.setColor(0xF1C40F)
-			.setThumbnail(message.author.displayAvatarURL())
+			.setThumbnail('https://cdn.discordapp.com/attachments/693964124840788031/694002373479366686/d193c500-6cee-4974-a385-f4a03a6103be_200x200.png')
 			.setFooter('Thanks for using Discovery Bot!')
 			message.channel.send(message,author, embed);
 		break;
