@@ -48,7 +48,7 @@ bot.on('message', async message=>{
 		break;
 
 		case 'surprise':
-			message.send('test');
+			message.author.send('test')
 		break;
 
 		default:
