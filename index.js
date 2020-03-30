@@ -30,6 +30,10 @@ bot.on('message', async message=>{
 			message.channel.send('pong!')
 		break;
 
+		case 'surprise':
+			message.channel.send('test')
+		break;
+
 		case 'embed':
 			const embed = new Discord.MessageEmbed()
 			.setTitle('User Information')
@@ -45,10 +49,6 @@ bot.on('message', async message=>{
 		case 'send':
 			const attachment = new Discord.MessageAttachment('https://i.imgur.com/ZOKp8LH.jpg')
 			message.channel.send(message.author, attachment);
-		break;
-
-		case 'surprise':
-			message.channel.send('test')
 		break;
 
 		default:
