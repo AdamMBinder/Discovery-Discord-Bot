@@ -43,10 +43,10 @@ bot.on('message', async message=>{
 		break;
 
 		case 'help':
+			const embed = new Discord.MessageEmbed()
 			.setTitle('Discovery Bot')
 			.addField('How to Use', 'Simply upload an image (.jpg, .jpeg, or .png formats) and Discovery Bot will identify and transcribe your image automatically.')
 			.addField('Commands', '!help - What you see right now!\n!about - Who made me and what version I am!\n??? - A secret command, can you find it?' )
-			.addField('Version', '1.1.0')
 			.setColor(0xF1C40F)
 			.setThumbnail('https://cdn.discordapp.com/attachments/693964124840788031/694002373479366686/d193c500-6cee-4974-a385-f4a03a6103be_200x200.png')
 			.setFooter('Thanks for using Discovery Bot!')
