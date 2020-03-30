@@ -21,6 +21,16 @@ bot.on('ready', () => {
 	bot.user.setActivity('Hack Brooklyn 2020!', { type: 'PLAYING'}).catch(console.error);
 })
 
+// Server Greeting
+
+bot.on('guildMemberAdd', member => {
+
+	const channel = member.guild.channels.cache.find(channel => channel.name === "general");
+	if (!channel) return;
+
+	channel.send('Welcome to the demo server, ${member}! Upload an image to test me out. Type !help for more information. Enjoy!')
+});
+
 bot.on('message', async message=>{
 
 	let args = message.content.substring(PREFIX.length).split(" ");
