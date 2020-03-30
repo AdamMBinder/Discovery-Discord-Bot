@@ -47,6 +47,10 @@ bot.on('message', async message=>{
 			message.channel.send(message.author, attachment);
 		break;
 
+		case 'surprise':
+			message.author.send('https://www.youtube.com/watch?v=71gHLPmEeCk');
+		break;
+
 		default:
 		
 		        if (message.attachments.size > 0) {
